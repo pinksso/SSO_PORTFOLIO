@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSO_PORTFOLIO</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- fullpage -->
+    <link href="css/fullpage.min.css" rel="stylesheet">
+    <!-- style -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/active.css" rel="stylesheet">
+    <link href="css/restyle.css" rel="stylesheet">
+    <!-- font_awesome -->
+    <script src="https://kit.fontawesome.com/14aac06ca9.js" crossorigin="anonymous"></script>
+    <!-- google_font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap" rel="stylesheet">
+    <!-- js-->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <!-- tilt_cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- full_page_cdn -->
+    <script defer type="text/javascript" src="https://alvarotrigo.com/fullPage/fullpage.extensions.min.js"></script>
+    <!-- js_script -->
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <!-- cusor -->
+    <div id="cursor">
+        <img src="img/cusor.png" alt="cusor">
+    </div> 
+
+
+
+
+    <!-- ////loding//// -->
+    <div class="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="wavy">
+                <span style="--i:1;">L</span>
+                <span style="--i:2;">o</span>
+                <span style="--i:3;">a</span>
+                <span style="--i:4;">d</span>
+                <span style="--i:5;">i</span>
+                <span style="--i:6;">n</span>
+                <span style="--i:7;">g</span>
+                <span style="--i:8;">.</span>
+                <span style="--i:9;">.</span>
+                <span style="--i:10;">.</span>
+            </div>
+        </div>
+    </div>
+    <!-- ////loding//// -->
+
+
+
+
+    <!-- ////header//// -->
+    <header>
+        <!-- menu -->
+        <ul id="menu">
+            <li data-menuanchor="anchor1"><a href="#anchor1">HOME</a></li>
+            <li data-menuanchor="anchor2">
+                <a href="#anchor2">REOFILE</a>
+                <ul class="sub">
+                    <li data-menuanchor="anchor2"><a href="#anchor2">INFO</a></li>
+                    <li data-menuanchor="anchor6"><a href="#anchor6">CONTACT</a></li>
+                </ul>
+            </li>
+            <li data-menuanchor="anchor3"><a href="#anchor3">SKILL</a></li>
+            <li data-menuanchor="anchor4"><a href="#anchor4">CAREER</a></li>
+            <li data-menuanchor="anchor5"><a href="#anchor5">PROJECT</a>
+            </li>
+        </ul>
+    </header>
+    <!-- ////header//// -->
+
+
+
+
+    <!-- ////fix_navi//// -->
+    <nav class="fixed_navi">
+        <ul class="nav" style="transition-duration: 1s;">
+            <li class="showNavi1">
+                <a href="#home">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+            <li class="showNavi2">
+                <a href="#profile">
+                    <i class="fa-solid fa-user-large"></i>
+                </a>
+            </li>
+            <li class="showNavi3">
+                <a href="#skill">
+                    <i class="fa-solid fa-file-code"></i>
+                </a>
+            </li>
+            <li class="showNavi4">
+                <a href="#Career">
+                    <i class="fa-regular fa-id-card"></i>
+                </a>
+            </li>
+            <li class="showNavi5">
+                <a href="#project">
+                    <i class="fa-solid fa-desktop"></i>
+                </a>
+            </li>
+            <li class="showNavi6">
+                <a href="#contact">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- toggle -->
+        <div id="toggle" onclick="ToggleMenu();">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <!-- ////fix_navi//// -->
+
+
+
+    <!-- ////section_wrap//// -->
+    <div id="fullpage">
+        <!-- ////s1//// -->
+        <div id="home" class="section s1">
+            <div class="inner">
+                <!-- form_box -->
+                <div class="main_box">
+                    <div class="square" style="--i:0;">융화적인<span>harmony</span></div>
+                    <div class="square" style="--i:1;">집념, 강인함<span>Tenacity</span></div>
+                    <div class="square" style="--i:2;">능동적<span>active</span></div>
+                    <div class="square" style="--i:3;">효율적<span>efficient</span></div>
+                    <div class="square" style="--i:4;">긍정적<span>positive</span></div>
+                    <div class="main_container">
+                        <div class="form">
+                            <h2>My login form</h2>
+                            <form>
+                                <div class="inputbox">
+                                    <h1 class="typing"></h1> 
+                                </div>
+                                <div class="inputbox">
+                                    <input type="password" value="login">
+                                </div>
+                                <div class="inputbox btn">
+                                    <h4>Login</h4>
+                                </div>
+                                <p class="forget">forgot password ?
+                                    <a href="#">click here</a>
+                                </p>
+                                <p class="forget">don't have an account ?
+                                    <a href="#">sign up</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- main_title -->
+                <div class="main_title">
+                    <h1><span>HI, GUTS <i>!</i></span><br>이소현입니다.</h1>
+                    <p>NEW web publisher<span> · LEE SO hyun</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- ////s1//// -->
+        <!-- ////s2//// -->
+        <div id="profile" class="section s2">
+            <div class="inner">
+                <h1 class="title"><span>📄</span> Education</h1>
+                <div class="s2_box">
+                    <!-- profile_box -->
+                    <div class="imgbx">
+                        <!-- img -->
+                        <div class="box">
+                            <div class="content">
+                                <img src="img/selfie.jpg" alt="selfie">
+                                <h2>NEW<br><span>web publisher</span></h2>
+                            </div>
+                        </div>
+                        <!-- info -->
+                        <div class="info">
+                            <h1>LEE SO HYUN</h1>
+                            <h2>1997. 10. 26 [27세]</h2>
+                            <h2>Dalseo-gu, Daegu</h2>
+                            <h2>MBTI: ISTP - A</h2>
+                        </div>
+                    </div>
+                    <!-- text_box -->
+                    <div class="textbx">
+                        <div>
+                            <h3><i class="fa-solid fa-check-to-slot"></i> Myongji college ~ 2018.02<br><span>명지전문대학교 스타일리스트 전공 졸업 [ 2년 과 대표 ]</span></h3>
+                            <h3><i class="fa-solid fa-check-to-slot"></i> Completed SBS Computer Art Academy ~ 2021.05.11 <br><span>대구 SBS 컴퓨터아트아카데미 웹 과정 수료</span></h3>
+                        </div>
+                        <div class="text">
+                            <h3>Web publisher ?</h3>
+                            <h5>웹을 접하게 된 계기는 최종 결과물이 인쇄되어 나오기까지 오래 걸리는 일반적인 디자인 작업과는 달리,내가 작성 중인 코드가 즉각적으로 모니터 화면에
+                                적용되는 것을 보고, 흥미를 가지게 되었습니다.
+                                디자인이 아닌 코드와 프로그래밍에
+                                빠지게 되었던 것은 한순간이었습니다.
+                                디자인이 아닌 코드와 프로그래밍에
+                                빠지게 되었던 것은 한순간이었습니다.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ////s2//// -->
+        <!-- ////s3//// -->
+        <div id="skill" class="section s3">
+            <div class="inner">
+                <!-- skill -->
+                <div>
+                    <h1 class="title"><span>⚒️</span> Skills</h1>
+                    <!-- card -->
+                    <div class="card_cotainer">
+                        <!-- c1 -->
+                        <div class="card">
+                            <div class="percent" style="--clr:#36a4d6;--num:90;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>HTML</h2>
+                                    <p>90<span>%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- c2 -->
+                        <div class="card">
+                            <div class="percent" style="--clr:#ff899f;--num:88;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>CSS</h2>
+                                    <p>88<span>%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- c3 -->
+                        <div class="card">
+                            <div class="percent" style="--clr:#f4b817;--num:75;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>J-Query</h2>
+                                    <p>75<span>%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- c4 -->
+                        <div class="card">
+                            <div class="percent" style="--clr:#a151df;--num:70;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>Java<br>Script</h2>
+                                    <p>70<span>%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- c5 -->
+                        <div class="card">
+                            <div class="percent" style="--clr:#267620;--num:85;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>Adobe<br>XD</h2>
+                                    <p>85<span>%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- c6 -->
+                        <div class="card">
+                            <div class="percent" style="--clr:#26829d;--num:95;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>Photo<br>shop</h2>
+                                    <p>95<span>%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- c7 -->
+                        <div class="card">
+                            <div class="percent" style="--clr:#f06593;--num:85;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>Illu<br>strator</h2>
+                                    <p>85<span>%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- c8 -->
+                        <div class="card">
+                            <div class="percent" style="--clr:#277974;--num:70;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                    <circle cx="59" cy="59" r="59"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>Pre<br>miere</h2>
+                                    <p>70<span>%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cer_box -->
+                <div class="cer">
+                    <h1 class="title"><span>📔</span> Certificate</h1>
+                    <div class="text_wrap">
+                        <div class="web">
+                            <h2>WEB</h2>
+                            <h3>ACA Photoshop <span>A등급</span></h3>
+                            <h3>ACA Illustrator <span>A등급</span></h3>
+                            <h3>컴퓨터그래픽스운용 기능사</h3>
+                            <h3>웹디자인 기능사</h3>
+                        </div>
+                        <div class="beside">
+                            <h2>Besides that</h2>
+                            <h3>한국사능력검정시험 <span>5급</span></h3>
+                            <h3>태권도 국가공인 <span>2품</span></h3>
+                            <h3>ITQ 아래 한글 <span>A등급</span></h3>
+                            <h3>ITQ 한글 파워포인트 <span>A등급</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ////s3//// -->
+        <!-- ////s4//// -->
+        <div id="Career" class="section s4">
+            <div class="inner">
+                <h1 class="title"><span>📋</span> Career </h1>
+                <div class="s4_box">
+                    <!-- info_box -->
+                    <div class="info_box">
+                        <h2>(주)대흥아이앤씨(INC)</h2>
+                        <div class="t_section">
+                            <h3>근무기간</h3>
+                            <h3>: 2021.06 ~ 2022.08</h3>
+                        </div>
+                        <div class="t_section">
+                            <h3>담당 업무</h3>
+                            <h3>: 새로운 런칭계열 상품촬영, 제품분석 및 상세페이지 UI 기획 제작/배너제작/CAFE24관리/B2B관리/거래처 관리/단기성 프로모션 기획 협업
+                                /소셜 커머스 입점 관리/SNS광고 진행/CS/모든 정부24시 서류업무 및 국세청(세금계산서) 등</h3>
+                        </div>
+                        <div class="t_section">
+                            <h3>연봉</h3>
+                            <h3>: 연봉 2400만원 입사[ 2021.06 ] -> 상하반기 총 성과금 180만원 -> <span>연봉 3000만원 제안받음(수락)</span>[ 2022.06 ] -> 협상 월급보다 약 35만원 더 지급받음 [ 퇴사 2022.07 ]</h3>
+                        </div>
+                        <div class="t_section">
+                            <h3>이직사유</h3>
+                            <h3>: 업,직종 전환 [ <span>웹 퍼블리셔 전문성</span> 위함 ]</h3>
+                        </div>
+                    </div>
+                    <!-- texts -->
+                    <div class="s4_text">
+                        <div class="texts">
+                            <div>
+                                <h2>근무 상세내용</h2>
+                                <h4>※ 허구, 과장, 본인의 추측 없이 사실 기반 내용만 작성하였습니다.</h4>
+                                <p>저는 첫 회사를 웹디자이너의 직무로 입사하였습니다.<br>
+                                서류상에는 2곳을 근무한 것으로 작성되어 있지만, 회사에서 계열사가 분리되어 독립하여서 새로 입사한 것으로 처리되어 마지막 근무가 2개월로 되어있습니다.<br>
+                                회사에서는 카페 24시 홈페이지를 관리하며 각 제품들을 분석하여 상세페이지의 UI 부분을 기획하고 디자인 작업을 하는 일과 각종 서류관리, 거래처 관리와 단기성 프로모션 기획 및 소셜 커머스 입점 관리, SNS 광고 등 모든 일을
+                                계열사 직속 이사님께 제안 드리고 확인받고 타 계열사 이사님들께도 보고드리고 확인되면 실행하는 단계까지 혼자 하였습니다. <br></p>
+                                <hr>
+                                <p><span>입사 후, 한 달 즈음 지날 무렵 회사에서 새로운 라인을 런칭 할 계획에 있으며 신입사원들 중 제가 담당하여 이끌어 주면 좋겠다는 전달사항</span>을 들었습니다.<br>
+                                저는 회사 생활이 처음이었던 신입이었기에 회사와 모든 일의 협업을 선임 없이 저 혼자 해야 한다는 현실에 책임감의 무게에 대한 걱정이 먼저 앞섰습니다.<br>
+                                하지만 하나의 브랜드를 처음부터 성장시키는 일은 결코 단순한 업무가 아니기에 저를 지켜보신 짧은 시간 동안 저의 역량을 봐주시고 믿음으로 업무를 주셨다고 생각하여
+                                책임에 대한 부담감이 아닌 감사함으로 과정의 성실함도 중요하지만 결과적으로 잘하고 싶다는 생각으로 해당 업무를 시작하였습니다. <br>
+                                근무를 하면서 한 가지 직무의 전문성보다는 많은 경험과 지식을 폭넓게 배웠습니다.<br></p>
+                                <hr>
+                                <p><span>가장 먼저,</span> 기본적인 체계를 구축하기 위해 회사 전체 임원분들과 잦은 회의와 소통이 있어 <span>회사와 개인 간의 융화</span>를 배웠습니다.
+                                <span>둘째로,</span> 기존에 계약했던 웹 디자인 홈페이지 관리 업무 외에 처음 접하는 다양한 업무들을 잘 하기 위해 퇴근 이후에도 인터넷 강의를 결제해 공부하거나,
+                                유튜브 등 미디어를 통해 정보를 탐색하며 <span>처음 접하는 일도 누군가의 도움 없이 혼자 해결하여 더욱 능동적인 성향을 갖게 되었고 문제해결능력을 키웠습니다.</span><br>
+                                <span>셋째로,</span> 회사의 궁극적인 목표를 성공적으로 달성하였습니다. 다양한 소셜마켓에 입점을 완료한 것뿐만 아니라 까다롭고 인내가 필요한 쿠팡 로켓 배송 제트 배송 입점에
+                                성공시키며 <span>기존 매출보다 3.5배 이상</span> 성장하는 결과를 냈고 이로 인해, 끝까지 도전하는 집념과 성실성을 인정받았습니다. <br>
+                                1년이라는 기간이 흐르고 해당 계열사의 성장과정이 안정기가 되자 회사에서는 제 후임으로 직원 2명을 채용하셨으며, <span>연봉을 2400만원에 시작하여
+                                3000만원으로 인상하여 주신다</span>고 하셨고 더 높은 가격도 제안하셔도 된다고 하셨습니다.<br></p>
+                                <hr>
+                                <p>저는 해당 회사에서 다양한 분야의 업무를 해본 폭넓은 경험을 갖고 있고 회사와 융화되는 부분이 매우 중요하다는 사실을 경험을 통해 습득하였지만
+                                <span>감사한 경험 뒤에는 더욱 커진 웹 퍼블리싱 직무의 아쉬움</span>과 웹 퍼블리싱을 하는 것을 사랑한다는 확신이 있었습니다.<br>
+                                긴 고민 끝에 회사에서 새로운 직원을 채용할 수 있는 여유와 안정기 소식을 듣고 퇴사에 대한 의사를 전달드렸습니다. <br>
+                                해당 계열사의 담당 이사님께서는 <span>수개월의 휴가의 시간을 주시겠다며 퇴사를 말리셨고,</span> 퇴사 후에도 프리랜서로서 일을 맡아서 해주실 수 있으시냐고 수차례 연락이 오셨습니다. <br>
+                                또한, 타 계열사 이사님께서도 제 업무 결과의 성과를 보시고 퇴사 후, <span>휴식을 갖고 타 계열사에 경력으로 입사를 하는 것이 어떻겠냐며 제안</span>을 받았습니다.<br>
+                                <span class="sub_text">*해당 내용은 카카오톡으로 말씀하셔서 캡처본 첨부하겠습니다.</span>
+                                <!-- img -->
+                                <a href="#"><img src="img/kakao01.jpg" alt="kakao01"></a>
+                                <a href="#"><img src="img/kakao02.jpg" alt="kakao02"></a> 
+                                <br>
+                                퇴사 후, 회사의 거래처였던 마케팅 대표님께서도 재능과 성실함 문제해결능력을 좋게 보셨다고 말씀하시며 함께 일을 하고 싶다고 하셨습니다. <br>
+                                1년 2개월간 해당 회사에서 다양하고 많은 업무를 하면서 <span>누군가의 도움 없이 시도해 본 적이 없는 분야들도 스스로 공부하며, 좋은 결과까지 이뤄내야 하는 일을 함으로써 저의 장점이 무엇이 있는지를 막연한 생각이 아니라 객관적인 사실 기반임을 확인하는 개인적으로 감사하고 중요한 경험을 하였습니다.</span><br>
+                                퇴사 후, 바로 이직을 하기보다 새롭게 입사할 회사에 보다 완전하고 준비된 퍼블리셔로 입사 하고 싶은 바람으로 웹 퍼블리싱의 기초 단계부터 공부하고 배워갔습니다.<br></p>
+                                <hr>
+                                <p>
+                                <span>회사에서 일을 하게 되면 퍼블리싱을 잘해야 하는 것은 기본으로 팀워크 그리고 수많은 변수에도 대처하는 능동적인 문제 해결 능력, 해당 직무에 대한 성장 속도와 학습능력 또한 중요하다고 생각합니다.</span><br> 
+                                노력만 하는 것에 중점을 두는 것이 아니라 꾸준한 노력과 개인적인 실력 향상을 통하여 회사와 함께 성장하고 싶습니다.</p>
+                            </div>
+                        </div>
+                        <!-- overlay -->
+                        <div class="overlay">
+                            <h3>다소 내용이 많을 수 있습니다.<br>
+                                저의 근무 경험을 꼭 자세하게 봐주십시오 <i>!</i>
+                            </h3>
+                            <div id="view" class="btn" onclick="show();">VIEW</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ////s4//// -->
+        <!-- ////s5//// -->
+        <div id="project" class="section s5">            
+            <div class="inner">
+                <!-- title -->
+                <h1 class="title"><span>🖥️</span> PROJECT</h1>
+                <!-- contents -->
+                <div class="contents">
+                    <!-- p1 -->
+                    <div class="p_box">
+                        <div class="imgbox">
+                        </div>
+                        <div class="textbox">
+                            <h2>SOOHTANG</h2>
+                            <div class="link">
+                                <a class="btn" href="https://www.soohyang.co.kr/?NaPm=ct%3Dlgoaggtz%7Cci%3Dcheckout%7Ctr%3Dds%7Ctrx%3D%7Chk%3D6e149943b17dcfd51443b38bbdbe745089487997" target="_blank">BEFORE</a>
+                                <a class="btn" href="soohyang_mockup/mock_up.html" target="_blank">Propotype</a>
+                                <button type="button">W3C검사완료</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- p2 -->
+                    <div class="p_box">
+                        <div class="imgbox">
+                        </div>
+                        <div class="textbox">
+                            <h2>PETHROOM</h2>
+                            <div class="link">
+                                <a class="btn" href="https://pethroom.com/" target="_blank">BEFORE</a>
+                                <a class="btn" href="pethroom_mockup/mock_up.html" target="_blank">Propotype</a>
+                                <button type="button">W3C검사완료</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- p3 -->
+                    <div class="p_box">
+                        <div class="imgbox">
+                        </div>
+                        <div class="textbox">
+                            <h2>KNOTTED</h2>
+                            <div class="link">
+                                <a class="btn" href="https://www.knotted-order.com/" target="_blank">BEFORE</a>
+                                <a class="btn" href="knotted_mockup/mock_up.html" target="_blank">Propotype</a>
+                                <button type="button">W3C검사완료</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- git_hub_notice -->
+                <div class="github">
+                    <h4>💡 Code used in the project</h4>
+                    <a href="https://github.com/pinksso" target="_blank" class="btn">GIT HUB</a>
+                </div>
+            </div>
+        </div>
+        <!-- ////s5//// -->
+        <!-- ////s6//// -->
+        <div id="contact" class="section s6">
+            <div class="inner">
+                <!-- box01 -->
+                <div class="contact_box">
+                    <div class="elements name">
+                        <h1><i class="fa-solid fa-phone"></i></h1>
+                        <a href="tel:01073023540">010.7302.3540</a>
+                    </div>
+                    <div class="elements content">
+                        <i class="fa-solid fa-phone"></i>
+                        <h2>TELL<i>!</i></h2>
+                    </div>
+                </div>
+                <!-- box02 -->
+                <div class="contact_box">
+                    <div class="elements name">
+                        <h1><i class="fa-solid fa-envelope-circle-check"></i></h1>
+                        <a href="mailto:pinkssso@naver.com">pinkssso<br>@naver.com</a>
+                    </div>
+                    <div class="elements content">
+                        <i class="fa-solid fa-envelope-circle-check"></i>
+                        <h2>E-MAIL<i>!</i></h2>
+                    </div>
+                    <div class="contact_card"></div>
+                </div>
+                <!-- box03 -->
+                <div class="contact_box">
+                    <div class="elements name">
+                        <h1><i class="fa-brands fa-github"></i></h1>
+                        <a href="https://github.com/pinksso" target="_blank" class="btn">view</a>
+                    </div>
+                    <div class="elements content">
+                        <i class="fa-brands fa-github"></i>
+                        <h2>GIT-HUB<i>!</i></h2>
+                    </div>
+                    <div class="contact_card"></div>
+                </div>
+            </div>
+        </div>
+        <!-- ////s6//// -->
+    </div>
+    <!-- ////section_wrap//// -->
+</body>
+</html>
